@@ -1,0 +1,7 @@
+Steps to Reproduce:
+Open vscode.
+Open Finder window.
+Select some files and copy.
+Switch to vscode.
+Select a folder.
+Try to paste.

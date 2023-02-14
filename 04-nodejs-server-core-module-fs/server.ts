@@ -13,7 +13,13 @@ let server:Server = http.createServer((request:IncomingMessage, response:ServerR
          if(error){
             console.log(error);
          }
-        response.end(`<pre>${result}</pre>`);
+         fs.writeFile(path.join(__dirname, "data", "data.txt"), result, 'utf-8', (error) => {
+              if(error){
+                console.log(error);
+              }
+              response.end(`<pre>Data is writen to a file</pre>`);
+         })
+        
      });
 
       
